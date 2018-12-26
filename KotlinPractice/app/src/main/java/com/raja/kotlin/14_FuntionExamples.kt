@@ -59,4 +59,16 @@ class FuntionExample{
             item  is Double-> "This is Double"
         }
     }
+
+    /// high Level Functions
+    fun test1() {
+        var myLamda: (Int) -> Unit = { s -> print(s) }
+        addNumber(10, 20, myLamda)
+    }
+
+    fun addNumber(x: Int, y: Int, action: (Int) -> Unit) {
+        action(x + y)
+    }
+
+
 }

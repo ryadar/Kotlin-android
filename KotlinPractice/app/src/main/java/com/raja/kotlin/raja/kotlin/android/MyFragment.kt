@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.raja.kotlin.ObjectDeclationExample
+import com.raja.kotlin.Singleton
 import com.ryadar.kotlinpractice.R
 
 class MyFragment() : Fragment() {
@@ -15,6 +17,9 @@ class MyFragment() : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         var myView:View= inflater.inflate(R.layout.fragment_example, null)
+
+        Singleton.test()
+
         if (this.arguments != null) {
             var name: String = arguments!!.getString("MyKey", "There is no data")
             var textView: TextView = myView.findViewById<TextView>(R.id.textViewFiledName)

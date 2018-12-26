@@ -6,6 +6,10 @@ class ArrayExample{
     fun arrayExample(){
         var myArray = arrayOf(1,2,3)
         var intArray = intArrayOf(1,2,3,4)
+
+        for(i in myArray ){
+            println("Number is $i ")
+        }
     }
 
 }

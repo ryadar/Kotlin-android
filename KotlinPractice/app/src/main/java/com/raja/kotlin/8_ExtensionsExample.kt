@@ -8,7 +8,6 @@ class ExtensionFuntionExample{
        Log.i("Raja", name.appendMyName());
     }
 
-
     fun String.appendMyName():String{
         return "Student Name is\t"+ this
     }
